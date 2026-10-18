@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="0"
+        android:textSize="32sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="24dp" />
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Toast"
+        android:onClick="showToast"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/show_count"
+        app:layout_constraintTop_toTopOf="@id/show_count"
+        app:layout_constraintBottom_toTopOf="@id/button_zero" />
+
+    <Button
+        android:id="@+id/button_zero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Zero"
+        android:backgroundTint="#BDBDBD"
+        android:onClick="zero"
+        app:layout_constraintStart_toStartOf="@id/button_toast"
+        app:layout_constraintEnd_toEndOf="@id/button_toast"
+        app:layout_constraintTop_toBottomOf="@id/button_toast"
+        app:layout_constraintBottom_toTopOf="@id/button_count" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Count"
+        android:onClick="countUp"
+        app:layout_constraintStart_toStartOf="@id/button_toast"
+        app:layout_constraintEnd_toEndOf="@id/button_toast"
+        app:layout_constraintTop_toBottomOf="@id/button_zero"
+        app:layout_constraintBottom_toBottomOf="@id/show_count" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
