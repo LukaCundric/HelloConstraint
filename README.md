@@ -1,14 +1,16 @@
 # HelloConstraint
 
 ## Opis
-Aplikacija HelloConstraint je izdelana v Android Studiu s programskim jezikom Java. Namen naloge je spoznavanje postavitve ConstraintLayout in dela z gumbi.
+HelloConstraint je preprosta Android aplikacija, izdelana v Android Studiu s programskim jezikom Java. Projekt je nastal v okviru naloge pri predmetu Razvoj mobilnih aplikacij.
+Namen projekta je spoznati uporabo postavitve `ConstraintLayout`, delo z gumbi in spreminjanje elementov uporabniškega vmesnika glede na uporabnikove klike.
 
 ## Funkcionalnosti
-- **Toast** – prikaže sporočilo `Hello Toast`.
+- **Toast** – prikaže kratko sporočilo `Hello Toast`.
 - **Zero** – ponastavi števec na 0 in spremeni barvo gumba na sivo.
 - **Count** – poveča števec za 1.
-- Gumb Count spremeni barvo glede na sodo ali liho vrednost.
-- Ob kliku na Count se spremeni tudi barva gumba Zero.
+- **Spreminjanje barv** – gumb Count spremeni barvo glede na to, ali je vrednost soda ali liha.
+- **Označevanje gumba Zero** – ob kliku na Count se spremeni tudi barva gumba Zero.
+- **Uporabniški vmesnik** – elementi so razporejeni s pomočjo ConstraintLayout.
 
 ## Uporabljene tehnologije
 - Java
@@ -20,9 +22,12 @@ Aplikacija HelloConstraint je izdelana v Android Studiu s programskim jezikom Ja
 1. Zaženi aplikacijo.
 2. Klikni **Toast** za prikaz sporočila.
 3. Klikni **Count** za povečanje števca.
-4. Klikni **Zero** za ponastavitev števca na 0.
+4. Opazuj spreminjanje barv glede na vrednost števca.
+5. Klikni **Zero** za ponastavitev števca na 0.
 
 ## Izgled Aplikacije
+
+Spodaj so prikazani posnetki zaslona aplikacije in njenega uporabniškega vmesnika.
 
 <p align="center">
   <img width="250" height="500" alt="HelloConstraint slika 3" src="https://github.com/user-attachments/assets/8d428350-490d-441b-ba2b-5edddbc469d6" />
@@ -34,5 +39,17 @@ Aplikacija HelloConstraint je izdelana v Android Studiu s programskim jezikom Ja
   <img width="450" alt="Posnetek zaslona 2026-10-18 193227" src="https://github.com/user-attachments/assets/8be27a00-6040-40f1-adc4-42ddd4166e75" />
 </p>
 
+## Cilj naloge
+
+Cilj naloge je bil izdelati interaktivno Android aplikacijo, v kateri lahko uporabnik upravlja števec s pomočjo gumbov. Pri tem sem uporabil ConstraintLayout za razporeditev elementov ter Javo za delovanje gumbov in spreminjanje njihovih barv.
+
+## Kaj sem se naučil?
+
+- Uporabljati postavitev ConstraintLayout.
+- Povezati gumbe z metodami v Javi.
+- Posodabljati besedilo v elementu TextView.
+- Spreminjati barve elementov uporabniškega vmesnika.
+- Uporabljati XML za oblikovanje Android aplikacije.
+  
 ## Avtor
 Luka Cundrič
