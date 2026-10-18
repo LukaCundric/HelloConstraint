@@ -2,52 +2,57 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
     android:padding="8dp">
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_width="120dp"
-        android:layout_height="0dp"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
         android:text="@string/button_label_toast"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:textStyle="bold"
         android:backgroundTint="@color/colorPrimary"
         android:onClick="showToast"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/button_zero"
-        app:layout_constraintVertical_chainStyle="spread"
-        android:layout_marginBottom="4dp" />
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <Button
         android:id="@+id/button_zero"
-        android:layout_width="120dp"
-        android:layout_height="0dp"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
         android:text="@string/button_label_zero"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:textStyle="bold"
         android:backgroundTint="@color/gray"
         android:onClick="zero"
+        android:layout_marginStart="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_toast"
-        app:layout_constraintBottom_toTopOf="@id/button_count"
-        android:layout_marginBottom="4dp" />
+        app:layout_constraintBottom_toTopOf="@id/button_count" />
 
     <Button
         android:id="@+id/button_count"
-        android:layout_width="120dp"
-        android:layout_height="0dp"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
         android:text="@string/button_label_count"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:textStyle="bold"
         android:backgroundTint="@color/colorPrimary"
         android:onClick="countUp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_zero"
         app:layout_constraintBottom_toBottomOf="parent" />
@@ -57,7 +62,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="0"
-        android:textSize="140sp"
+        android:textSize="100sp"
         android:textStyle="bold"
         android:gravity="center"
         android:background="@color/yellow"
@@ -65,7 +70,7 @@
         android:layout_marginStart="8dp"
         app:layout_constraintStart_toEndOf="@id/button_toast"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/button_toast"
+        app:layout_constraintBottom_toBottomOf="@id/button_count" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

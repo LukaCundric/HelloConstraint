@@ -7,6 +7,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +26,25 @@ public class MainActivity extends AppCompatActivity {
         show_count = findViewById(R.id.show_count);
         button_zero = findViewById(R.id.button_zero);
         button_count = findViewById(R.id.button_count);
+
+        View mainLayout = findViewById(R.id.main_layout);
+        if (mainLayout != null) {
+            ViewCompat.setOnApplyWindowInsetsListener(mainLayout, (v, insets) -> {
+                Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                v.setPadding(
+                        systemBars.left + dpToPx(8),
+                        systemBars.top + dpToPx(8),
+                        systemBars.right + dpToPx(8),
+                        systemBars.bottom + dpToPx(8)
+                );
+                return insets;
+            });
+        }
+    }
+
+    private int dpToPx(int dp) {
+        float density = getResources().getDisplayMetrics().density;
+        return Math.round(dp * density);
     }
 
     public void showToast(View view) {
