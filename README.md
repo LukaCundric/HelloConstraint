@@ -23,14 +23,16 @@ Aplikacija HelloConstraint je izdelana v Android Studiu s programskim jezikom Ja
 4. Klikni **Zero** za ponastavitev števca na 0.
 
 ## Izgled Aplikacije
-<p>
-<img width="491" height="997" alt="HelloConstraintSLika3" src="https://github.com/user-attachments/assets/8d428350-490d-441b-ba2b-5edddbc469d6" />
-<img width="521" height="1005" alt="HelloConstraintSLika2" src="https://github.com/user-attachments/assets/b00482e0-115b-4dc4-ac71-da7c4a57071a" />
-<img width="488" height="1003" alt="HelloConstraintSLika1" src="https://github.com/user-attachments/assets/7bba999a-8980-4b1a-b3dc-e9e4fa21284c" />
-<img width="1902" height="932" alt="HelloConstraintSLika4" src="https://github.com/user-attachments/assets/88fb211a-fa08-4779-9858-323a1be0151f" />
-<img width="1912" height="938" alt="Posnetek zaslona 2026-10-18 193227" src="https://github.com/user-attachments/assets/8be27a00-6040-40f1-adc4-42ddd4166e75" />
+<p align="center">
+  <img width="250" alt="HelloConstraint slika 3" src="https://github.com/user-attachments/assets/8d428350-490d-441b-ba2b-5edddbc469d6" />
+  <img width="250" alt="HelloConstraint slika 2" src="https://github.com/user-attachments/assets/b00482e0-115b-4dc4-ac71-da7c4a57071a" />
+  <img width="250" alt="HelloConstraint slika 1" src="https://github.com/user-attachments/assets/7bba999a-8980-4b1a-b3dc-e9e4fa21284c" />
 </p>
 
+<p align="center">
+  <img width="450" alt="HelloConstraint slika 4" src="https://github.com/user-attachments/assets/88fb211a-fa08-4779-9858-323a1be0151f" />
+  <img width="450" alt="Posnetek zaslona 2026-10-18 193227" src="https://github.com/user-attachments/assets/8be27a00-6040-40f1-adc4-42ddd4166e75" />
+</p>
 
 ## Avtor
 Luka Cundrič
